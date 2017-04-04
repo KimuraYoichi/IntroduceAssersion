@@ -1,20 +1,21 @@
+package after;
 import java.util.Random;
 
 public class Main {
     private static final Random random = new Random(1234);
 
     private static void execute(int length) {
-        // —”‚Åƒf[ƒ^ì¬
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Åƒfï¿½[ï¿½^ï¿½ì¬
         int[] data = new int[length];
         for (int i = 0; i < data.length; i++) {
             data[i] = random.nextInt(data.length);
         }
 
-        // ƒf[ƒ^‚ğ•\¦
+        // ï¿½fï¿½[ï¿½^ï¿½ï¿½\ï¿½ï¿½
         SortSample sorter = new SortSample(data);
         System.out.println("BEFORE:" + sorter);
 
-        // ƒ\[ƒg‚ğÀs‚µ‚Ä•\¦
+        // ï¿½\ï¿½[ï¿½gï¿½ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½ï¿½Ä•\ï¿½ï¿½
         sorter.sort();
         System.out.println(" AFTER:" + sorter);
 

@@ -1,3 +1,4 @@
+package after;
 public class SortSample {
     private final int[] _data;
 
